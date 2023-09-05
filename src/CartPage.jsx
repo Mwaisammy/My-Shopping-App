@@ -18,6 +18,8 @@ function CartPage() {
   return (
 
     <>
+
+    
     
     <div>
       <header>
@@ -29,6 +31,12 @@ function CartPage() {
     
       
       </header>
+
+
+      { products === null || products.length ===0 ? (
+      <h1 className='text-center text-3xl text-yellow-200 mt-[100px] font-semibold   '>Sorry. Your Cart is Empty!</h1>
+    ) : (
+
 
 
 
@@ -44,6 +52,9 @@ function CartPage() {
       ))}
 
       </div>
+    )}
+
+
     </div>
     
     </>
