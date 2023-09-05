@@ -1,3 +1,4 @@
+import { Toaster } from "react-hot-toast";
 import CartPage from "./CartPage";
 import Product from "./Product";
 import {
@@ -11,6 +12,7 @@ import {
 export default function App() {
   return (
     <div className="bg-slate-500 min-h-screen">
+      <Toaster/>
     
     
 <Routes>

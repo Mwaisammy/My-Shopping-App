@@ -25,7 +25,7 @@ function Product() {
   return (
     <div>
       <Header/>
-      <h1 className='text-blue font-bold mt-[80px] ml-7 text-bold fixed '>OUR PRODUCTS</h1>
+      <h1 className='text-blue font-bold mt-[80px] ml-7 text-bold fixed mb-7'>OUR PRODUCTS</h1>
       <div className='grid grid-cols-3 gap-5 mt-3 '>
         {products.map((product) => (
           <div key={product.id} className='m-[25px] p-4 border border-gray-300 mt-[100px]'>

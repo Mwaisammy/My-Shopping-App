@@ -34,7 +34,7 @@ function CartPage() {
 
       <div className='grid grid-cols-3 gap-3 mt-5 '>
       {products.map((product) => (
-        <div key={product.id} className=' m-[25px] p-4 border border-gray-300 mt-[100px]'>
+        <div key={product.id} className=' m-[25px] p-4 border border-gray-300 mt-[10px]'>
             <img src={product.image} alt={product.title} className='h-[200px] w-[150px] object-contain mt-10 ml-4  py-4 px-2'/>
             <button onClick={()=> handleRemoveFromCart(product.id)}className='bg-green-500  rounded-md text-white px-3 py-4 mb-[10px] hover:bg-red-400 transition duration-300 ease-in-out hover:scale-105 '>Remove from cart</button>
             {/* {console.log(product.id)} */}
