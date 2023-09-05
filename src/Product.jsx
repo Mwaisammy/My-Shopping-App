@@ -30,7 +30,7 @@ function Product() {
         {products.map((product) => (
           <div key={product.id} className='m-[25px] p-4 border border-gray-300 mt-[100px]'>
             <img src={product.image} alt={product.title} className='h-[200px] w-[150px] object-contain mt-10' />
-            <button onClick={() => addProduct(product)} className='mt-4 py-4 px-2 bg-green-600 hover:bg-yellow-400 rounded-md '>Add to Cart</button>
+            <button onClick={() => addProduct(product)} className='mt-4 py-4 px-2 bg-green-600 hover:bg-yellow-400 rounded-md hover:scale-105 transition-all duration-300 ease-in-out'>Add to Cart</button>
             <p className='text-gray-300 font-medium'>{product.title}</p>
             <p className='text-yellow-300 font-medium'>${product.price}</p>
           </div>
